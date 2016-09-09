@@ -19,7 +19,7 @@
                     <p>Come listen to Dave Hempy talk about <a href="http://rubyonrails.org/">Ruby on Rails</a>. Expect a good introduction to the MVC architecture and the Ruby programming language. </p>
 
                     <p class="meta">
-                        <a href="{{ URL::to('author') }}">Tech Talks Ky</a>
+                        <a href="{{ URL::to('about') }}">Tech Talks Ky</a>
                     </p>
                 </div>
 
