@@ -24,7 +24,7 @@
     <div class="col-xs-12 single-content">
         
 
-        <h1>Dave Hempy talk about Ruby on Rails</h1>
+        <h1>Dave Hempy | Ruby on Rails</h1>
 
         <p class="subtitle">September 14, 2016 @ 6pm @ <a href="http://www.plantory.org/">Plantory</a></p>
 
