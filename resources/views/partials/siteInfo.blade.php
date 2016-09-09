@@ -11,5 +11,6 @@
         <p>
             <a class="btn btn-primary" targt="_blank" href="{{ URL::to('https://wes37.typeform.com/to/JF00Dd') }}"><i class="fa fa-user-plus"></i>Join Our Slack Community</a>
         </p>
+        <br><br>
     </div>
 </div>
