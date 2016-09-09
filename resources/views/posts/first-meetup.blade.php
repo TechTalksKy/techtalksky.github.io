@@ -29,6 +29,8 @@
 
         <p class="subtitle">September 14, 2016 @ 6pm @ <a href="http://www.plantory.org/">Plantory</a></p>
 
+        <p><a href="https://www.facebook.com/events/336427056696877" target="_blank">Event Info</a></p>
+
         <p>Learn about the MVC architecture with examples from the Rails framework written in the Ruby programming language from speaker Dave Hempy.</p>
 
         <p>Dave has been programming for years, and loves open source stacks. And most recently participated in RedBull's Flugtag in Louisville. Dave also helps run the <a href="http://www.kre8now.com/">Kre8now Makerspace</a>.</p>
