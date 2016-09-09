@@ -1,6 +1,6 @@
 <div class="site-info">
     <div class="primary-info">
-        <img width="396" height="177" src={{asset('img/techtalks-website-sidebar.png')}} alt="">
+        <img width="396" height="177" style="margin-bottom:20px;" src={{asset('img/techtalks-website-sidebar.png')}} alt="">
         <p>Welcome to Tech Talks KY!  A fun monthly event to talk about software and networking with other devs!</p>
     </div>
     <div class="secondary-info">
