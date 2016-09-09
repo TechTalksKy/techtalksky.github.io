@@ -37,17 +37,13 @@
 
             <p>
                 <h4>Connect with Tech Talks Ky</h4>
-                <a href="https://twitter.com/techtalksky" class="social-links">
-                    <i class="fa fa-twitter"></i>
-                </a>
+                @include('partials.twitter')
 
-                <a href="https://facebook.com/techtalksky" class="social-links">
-                    <i class="fa fa-facebook"></i>
-                </a>
+                @include('partials.facebook')
 
-                <a href="https://wes37.typeform.com/to/JF00Dd" class="social-links">
-                    <i class="fa fa-slack"></i>
-                </a>
+                @include('partials.slack')
+
+                
             </p>
 
             <p>
