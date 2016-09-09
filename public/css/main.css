@@ -920,6 +920,17 @@ ol li {
   background: #fff;
 }
 
+section.sidebar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(255,255,255,.99));
+  z-index: -1;
+  left: 0;
+}
+
 /* line 1, ../sass/partials/_sidebar.sass */
 .sidebar {
   padding: 15px;

@@ -56,6 +56,17 @@ a:hover, a:active {
   transition: all 400ms;
 }
 
+section.sidebar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(255,255,255,.99));
+  z-index: -1;
+  left: 0;
+}
+
 /* line 50, ../sass/_type.sass */
 h1,
 h2 {
