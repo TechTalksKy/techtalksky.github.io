@@ -32,6 +32,10 @@
             </p>
 
             <p>
+                Presentation/Discussion and also hearing from our sponsors at IT staffing firm <a href="https://www.teksystems.com/en">TEK Systems</a>.
+            </p>
+
+            <p>
                 <h4>Connect with Tech Talks Ky</h4>
                 <a href="https://twitter.com/techtalksky" class="social-links">
                     <i class="fa fa-twitter"></i>
