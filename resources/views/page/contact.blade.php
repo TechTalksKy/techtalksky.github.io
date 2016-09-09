@@ -1,6 +1,6 @@
 @extends('layouts.page')
 
-@section('title', 'Writer Theme | Contact')
+@section('title', 'About | Tech Talks KY')
 
 @section('body_classes')
 
@@ -8,68 +8,73 @@
 
 <div class="row">
 
-                <div id="menu-target">
-                    <ul><li><i class="fa fa-home"></i><a href="{{ URL::to('index.html') }}">Home</a></li>
-                        <li><i class="fa fa-user"></i><a href="{{ URL::to('author.html') }}">John Smith</a></li>
-                        <li><i class="fa fa-anchor"></i><a href="{{ URL::to('page.html') }}">About</a></li>
-                        <li><i class="fa fa-star"></i><a href="{{ URL::to('favorites.html') }}">Favorites</a></li>
-                        <li><i class="fa fa-paper-plane"></i><a href="{{ URL::to('contact.html') }}">Contact</a></li>
-                    </ul><hr><ul><li><i class="fa fa-file"></i><a href="{{ URL::to('post.html') }}">Post Page</a></li>
-                        <li><i class="fa fa-file"></i><a href="{{ URL::to('post-sidebar.html') }}">Post with Sidebar</a></li>
+        @include('partials.nav')
 
-                        <li><i class="fa fa-home"></i><a href="{{ URL::to('alt-home.html') }}">Alternate Home</a></li>
-                        <li><i class="fa fa-image"></i><a href="{{ URL::to('category.html') }}">Category Page</a></li>
-                    </ul></div>
+        <section class="sidebar col-md-5 col-sm-12" style="background-image: url(img/techtalks_website_background_image.jpg)"><span class="menu-trigger animated fadeInDown">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </span>
 
-                <section class="sidebar col-md-5 col-sm-12" style="background-image: url(img/default-contact.jpg)"><span class="menu-trigger animated fadeInDown">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </span>
+            @include('partials.siteInfo')
 
-                    <div class="site-info">
-                        <div class="primary-info">
-                        <h1>Contact</h1>
-                            <p>Our team would love to hear from you. We're here for a quick chat, a lengthy discussion or perhaps just a hey.</p>
+        </section>
+        <div class="col-md-7 col-sm-12 col-md-offset-5 main-content">
 
-                        </div>
-                        <div class="secondary-info">
+            <h3>About</h3>
 
-                            <p><a class="btn btn-default" href="{{ URL::to('#') }}"><i class="fa fa-user-plus"></i>Newsletter Signup</a>
-                        </p></div>
-                    </div>
+            <p>
+                Tech Talks KY (formerly LEX>>FWD) is a meetup group in Lexington, Ky with a focus on software, programming and IT technologies. Our aim is to be platform agnostic and to focus on overall concepts and practices. We are open to everyone.
+            </p>
 
-                </section><div class="col-md-7 col-sm-12 col-md-offset-5 main-content">
+            <p>
+                We currently meet at <a href="http://www.plantory.org">The Plantory</a> once a month (the second Wedneday) at 6pm and welcome any who wants to learn or talk about software and technology or anything related.
+            </p>
 
-                    <h3>Contact our Team</h3>
+            <p>
+                <h4>Connect with Tech Talks Ky</h4>
+                <a href="https://twitter.com/techtalksky" class="social-links">
+                    <i class="fa fa-twitter"></i>
+                </a>
 
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" placeholder="Jane Doe" class="form-control" name="name"></div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" placeholder="example@email.com" class="form-control" name="email"></div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" placeholder="Example Ltd" class="form-control" name="company"></div>
+                <a href="https://facebook.com/techtalksky" class="social-links">
+                    <i class="fa fa-facebook"></i>
+                </a>
 
-                        <div class="form-group">
-                            <label for="number">Phone Number</label>
-                            <input type="tel" placeholder="+44778217779" class="form-control" name="number"></div>
+                <a href="https://wes37.typeform.com/to/JF00Dd" class="social-links">
+                    <i class="fa fa-slack"></i>
+                </a>
+            </p>
 
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" name="message" placeholder="Hello, lets chat"></textarea></div>
+            {{-- <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Jane Doe" class="form-control" name="name"></div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="example@email.com" class="form-control" name="email"></div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" placeholder="Example Ltd" class="form-control" name="company"></div>
 
-                        <div class="form-group">
-                            <input class="btn btn-default" type="submit" value="Send"></div>
-                    {{ csrf_field() }}
-</form>
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" placeholder="+44778217779" class="form-control" name="number"></div>
 
-                    <footer class="split-footer"><a href="{{ URL::to('post.html') }}">About</a>
-                        <i class="link-spacer"></i>
-                        <a href="{{ URL::to('post.html') }}">Writer 2015</a>
-                    </footer></div><!-- main content -->
-            </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" placeholder="Hello, lets chat"></textarea></div>
+
+                <div class="form-group">
+                    <input class="btn btn-default" type="submit" value="Send"></div>
+            {{ csrf_field() }}
+            </form> --}}
+
+            <footer class="split-footer"><a href="{{ URL::to('/') }}">Home</a>
+            
+            
+        </footer>
+
+            </div><!-- main content -->
+    </div>
 @stop

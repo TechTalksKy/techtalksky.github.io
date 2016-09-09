@@ -8,18 +8,7 @@
 
 <div class="row">
 
-                <div id="menu-target">
-                    <ul><li><i class="fa fa-home"></i><a href="{{ URL::to('index.html') }}">Home</a></li>
-                        <li><i class="fa fa-user"></i><a href="{{ URL::to('author.html') }}">John Smith</a></li>
-                        <li><i class="fa fa-anchor"></i><a href="{{ URL::to('page.html') }}">About</a></li>
-                        <li><i class="fa fa-star"></i><a href="{{ URL::to('favorites.html') }}">Favorites</a></li>
-                        <li><i class="fa fa-paper-plane"></i><a href="{{ URL::to('contact.html') }}">Contact</a></li>
-                    </ul><hr><ul><li><i class="fa fa-file"></i><a href="{{ URL::to('post.html') }}">Post Page</a></li>
-                        <li><i class="fa fa-file"></i><a href="{{ URL::to('post-sidebar.html') }}">Post with Sidebar</a></li>
-
-                        <li><i class="fa fa-home"></i><a href="{{ URL::to('alt-home.html') }}">Alternate Home</a></li>
-                        <li><i class="fa fa-image"></i><a href="{{ URL::to('category.html') }}">Category Page</a></li>
-                    </ul></div>
+                @include('partials.nav')
 
                 <section class="sidebar col-md-5 col-sm-12" style="background-image: url(img/default-favorites-sidebar.jpg)"><span class="menu-trigger animated fadeInDown">
                         <span class="bar"></span>

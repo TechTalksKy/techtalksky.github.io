@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{{ URL::to('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ URL::to('css/font-awesome.min.css') }}">
         <link rel="stylesheet" href="{{ URL::to('css/main.css') }}">
+        <link rel="stylesheet" href="{{ URL::to('css/customizations.css') }}">
 
         <!--[if lt IE 9]>
             <script src="{{ URL::to('/js/vendor/html5shiv.min.js') }}"></script>
@@ -38,6 +39,7 @@
         <!-- end no script -->
 
         <main class="container left-container">
+            
             @yield('content')
 
         </main> <!-- /container -->
