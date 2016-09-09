@@ -1,8 +1,22 @@
-@extends('layouts.page')
+@extends('layouts.blog')
 
 @section('title', 'First Meetup | Tech Talks Ky')
 
 @section('body_classes')
+
+@section('header')
+    <header class="hero-image" role="banner" style="background-image: url(img/postCover.png);">
+
+        <span class="menu-trigger animated fadeInDown">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+
+
+        @include('partials.nav')
+    </header>
+@stop
 
 @section('content')
 
