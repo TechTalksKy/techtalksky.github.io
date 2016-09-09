@@ -36,5 +36,6 @@
 
         <script src="{{ URL::to('js/main.js') }}"></script>
     @yield('scripts')
+    @include('partials.analytics')
 </body>
 </html>
