@@ -24,7 +24,7 @@
             <h3>About</h3>
 
             <p>
-                Tech Talks KY (formerly LEX>>FWD) is a meetup group in Lexington, Ky with a focus on software, programming and IT technologies. Our aim is to be platform agnostic and to focus on overall concepts and practices. We are open to everyone.
+                Tech Talks KY (formerly LEX>>FWD) is a meetup group in Lexington, Kentucky with a focus on software, programming and IT technologies. Our aim is to be platform agnostic and to focus on overall concepts and practices. We are open to everyone.
             </p>
 
             <p>
