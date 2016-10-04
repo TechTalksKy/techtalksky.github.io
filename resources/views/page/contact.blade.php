@@ -24,11 +24,15 @@
             <h3>About</h3>
 
             <p>
-                Tech Talks KY (formerly LEX>>FWD) is a meetup group in Lexington, Ky with a focus on software, programming and IT technologies. Our aim is to be platform agnostic and to focus on overall concepts and practices. We are open to everyone.
+                Tech Talks KY (formerly LEX>>FWD) is a meetup group with talks in both Louisville and Lexington.  We focus on software, programming and IT technologies. Our aim is to be platform agnostic and to focus on overall concepts and practices. We are open to everyone.
             </p>
 
             <p>
-                We currently meet at <a href="http://www.plantory.org">The Plantory</a> once a month (the second Wedneday) at 6pm and welcome any who wants to learn or talk about software and technology or anything related.
+                Our Louisville group currently meets at <a href="http://osheaslouisville.net/">O'Shea's Irish Pub</a> in the Highlands once a month (the second Tuesday) at 6pm.
+            </p>
+
+            <p>
+                Our Lexington group currently meets at <a href="http://www.plantory.org">The Plantory</a> once a month (the second Wednesday) at 6pm.
             </p>
 
             <p>
@@ -43,7 +47,12 @@
 
                 @include('partials.slack')
 
-                
+            </p>
+
+            <p>
+
+                <h4>Any pressing questions please contact <a href="mailto:wes@techtalks.ky">Wes</a></h4>
+
             </p>
 
             <p>
