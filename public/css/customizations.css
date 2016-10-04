@@ -4,3 +4,70 @@
 .secondary-info .social-links {
     font-size: 25px;
 }
+.hero-image {
+    color: #fff;
+    background: #1ca3a6;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+.hero-image .title {
+    letter-spacing: -1pt;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    padding-top: 90px;
+    font-size: 64px;
+    font-weight: 700;
+}
+.hero-image .subtitle {
+    font-size: 44px;
+    font-weight: 700;
+}
+.hero-image .date {
+    font-size: 22px;
+}
+
+footer.single .category-list {
+    border-right: none;
+    padding: 0;
+}
+
+footer.single {
+
+    padding: 40px 0 40px 0;
+    background-color: #F5F5F5;
+    border-top: solid 1px #E9E9E9;
+    text-align: left;
+}
+
+form .form-control input[type=radio] {
+    background: #000;
+    font-size: 44px;
+}
+
+@media (max-width: 992px) {
+    .hero-image .title {
+        padding-top: 25px;
+        
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    footer.single {
+        text-align: center;
+    }
+    .hero-image .title {
+        padding-top: 25px;
+        font-size: 34px;
+    }
+    .hero-image .subtitle {
+        font-size: 14px;
+    }
+    .hero-image .date {
+        font-size: 12px;
+    }
+    .main-content {
+        padding-top: 0;
+        margin-top: 60px;
+    }
+}
