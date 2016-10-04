@@ -15,6 +15,24 @@
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
+                        <a href="{{ URL::to('about') }}">Tues October 11, 2016 @ 6pm</a> - Louisville
+                    </p>
+                    <h2><a href="{{ URL::to('event/2016-10-11-managing-frontend-state-with-redux') }}">Managing Frontend State with Redux</a></h2>
+
+                    <p>
+                        Colan Connon will be talking about Redux, a state container for Javascript apps.
+                    </p>
+                    <p class="meta">
+                        <a href="{{ URL::to('about') }}">Tech Talks Ky</a>
+                    </p>
+                </div>
+
+                <div class=" col-xs-2  no-gutter">
+                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image"></div>
+            </article></div><!-- Home page posts -->
+
+            <article class="post"><div class="post-preview col-xs-10  no-gutter">
+                    <p class="meta">
                         <a href="{{ URL::to('about') }}">Wed October 12, 2016 @ 6pm</a> - Lexington
                     </p>
                     <h2><a href="{{ URL::to('event/2016-10-12-terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
