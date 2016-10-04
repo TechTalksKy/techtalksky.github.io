@@ -28,8 +28,8 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="https://avatars2.githubusercontent.com/u/6674648?v=3&s=466" class="user-icon" alt="user-image"></div>
+            </article>
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
