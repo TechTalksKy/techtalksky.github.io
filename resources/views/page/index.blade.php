@@ -17,7 +17,7 @@
                     <p class="meta">
                         <a href="{{ URL::to('about') }}">Wed October 12, 2016 @ 6pm</a> - Lexington
                     </p>
-                    <h2><a href="{{ URL::to('event/2016-10-12-Terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
+                    <h2><a href="{{ URL::to('event/2016-10-12-terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
                     
                     <p>
                         Christopher Davis will be talking about Terraform and AWS, describing your infrastructure as code.
