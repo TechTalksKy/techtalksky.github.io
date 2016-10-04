@@ -12,3 +12,6 @@ Route::get('category', 'PagesController@category');
 Route::get('first-meetup', 'PagesController@meetup');
 Route::get('event/{name}', 'PagesController@event');
 Route::get('talk/{name}', 'PagesController@talk');
+
+Route::get('submit-a-talk', 'TalkController@show');
+Route::post('submit-a-talk', 'TalkController@store');

@@ -1,27 +1,24 @@
-# Laravel PHP Framework
+# Tech Talks Ky
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This is the repo for the site at techtalks.ky
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+# ToDo
+* build out admin panel
+* once admin panel is built, add ui for Submissions.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Submit a Talk
 
-## Official Documentation
+This was added so we could have a url we could send out in order to allow people to submit talks in a somewhat orderly fashion. This is quick and dirty. At this point is just collecting. We might need to build out an admin panel, that would allow us to view the submissions.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Once this is deployed the http://techtalks.ky/submit-a-talk url should be used to submit talks. Feel free to add fields if needed, but I added these:
 
-## Contributing
+* author_name
+* email
+* avatar (just a link to an image basically)
+* description
+* bio
+* title
+* body (a more in depth description of talk)
+* availability (which month the person would like to present)
+* city
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
