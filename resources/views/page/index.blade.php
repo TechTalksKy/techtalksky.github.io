@@ -28,7 +28,8 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="https://avatars2.githubusercontent.com/u/6674648?v=3&s=466" class="user-icon" alt="user-image"></div>
+                    <img src="https://avatars2.githubusercontent.com/u/6674648?v=3&s=466" class="user-icon" alt="user-image">
+                </div>
             </article>
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
@@ -46,8 +47,9 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image">
+                </div>
+            </article>
 
             <article class="post">
                 <div class="post-preview col-xs-10  no-gutter">
@@ -67,8 +69,10 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://www.redbullflugtag.com/usa-louisville/wp-content/uploads/sites/17/2016/06/David-H-532x398.jpeg" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="http://www.redbullflugtag.com/usa-louisville/wp-content/uploads/sites/17/2016/06/David-H-532x398.jpeg" class="user-icon" alt="user-image">
+                </div>
+            </article>
+        </div><!-- Home page posts -->
 
         <div class="home-page-categories hide animated fadeIn ">
             <div class="category row">
