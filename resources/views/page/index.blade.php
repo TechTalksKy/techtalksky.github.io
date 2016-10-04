@@ -15,7 +15,12 @@
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
-                        <a href="{{ URL::to('about') }}">Tues October 11, 2016 @ 6pm</a> - Louisville
+                        <span class="city louisville">
+                            <i class="fa fa-map-marker"></i> Louisville</span> 
+                            <i class="fa fa-calendar"></i> 
+                            <a href="{{ URL::to('about') }}">
+                                Tues October 11, 2016 @ 6pm
+                            </a>
                     </p>
                     <h2><a href="{{ URL::to('event/2016-10-11-managing-frontend-state-with-redux') }}">Managing Frontend State with Redux</a></h2>
 
@@ -34,7 +39,13 @@
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
-                        <a href="{{ URL::to('about') }}">Wed October 12, 2016 @ 6pm</a> - Lexington
+                        <span class="city lexington">
+                            <i class="fa fa-map-marker"></i> Lexington
+                        </span>
+                        <i class="fa fa-calendar"></i> 
+                        <a href="{{ URL::to('about') }}">
+                            Wed October 12, 2016 @ 6pm
+                        </a>
                     </p>
                     <h2><a href="{{ URL::to('event/2016-10-12-terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
                     

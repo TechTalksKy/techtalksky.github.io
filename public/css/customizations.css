@@ -43,6 +43,22 @@ form .form-control input[type=radio] {
     font-size: 44px;
 }
 
+article .meta i.fa {
+    font-size: 20px;
+}
+article i.fa {
+    color: #ccc;
+}
+article .city {
+    font-weight: 700;
+}
+article .city.lexington {
+    color: #005daa;
+}
+article .city.louisville {
+    color: #AD0000;
+}
+
 @media (max-width: 992px) {
     .hero-image .title {
         padding-top: 25px;
