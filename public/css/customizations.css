@@ -38,6 +38,11 @@ footer.single {
     text-align: left;
 }
 
+form .form-control input[type=radio] {
+    background: #000;
+    font-size: 44px;
+}
+
 @media (max-width: 992px) {
     .hero-image .title {
         padding-top: 25px;
