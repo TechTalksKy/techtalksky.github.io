@@ -5,7 +5,11 @@
 @section('body_classes')
 
 @section('header')
-    <header class="hero-image" role="banner" style="background-image: url(/img/postCover.png);">
+    <header class="hero-image" role="banner" style="background: url('http://pre02.deviantart.net/41ba/th/pre/i/2012/241/0/4/fallout_terminal_texture_by_team_machine-d5cubxx.jpg'); background-repeat: none; background-size: cover">
+
+        <div class="title">Christopher Davis</div>
+        <div class="subtitle">Terraform & AWS</div>
+        <div class="date">Oct 12, 2016 @ 6pm @ Plantory </div>
 
         <span class="menu-trigger animated fadeInDown">
             <span class="bar"></span>
@@ -29,7 +33,7 @@
 
         <p class="subtitle">October 12, 2016 @ 6pm @ <a href="http://www.plantory.org/">Plantory</a></p>
 
-        <p><a href="https://www.facebook.com/events/336427056696877" target="_blank">Event Info</a></p>
+        <p><a href="https://www.facebook.com/events/605156676321055/" target="_blank">Event Info</a></p>
         <p>
             Explore the benefits of describing your infrastructure as code. We'll build a small application using <a href=
             "https://www.terraform.io/">Terraform</a> and AWS's <a href="https://aws.amazon.com/ecs/">container service</a>.
