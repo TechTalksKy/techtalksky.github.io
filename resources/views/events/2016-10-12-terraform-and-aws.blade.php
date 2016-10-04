@@ -20,6 +20,24 @@
 
         @include('partials.nav')
     </header>
+    <footer class="single">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-xs-12 col-sm-2">
+                        <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon " alt="user-image">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="category-list">
+                            <p>Presentation <span>October 12th 2016 @ 6pm</span></p>
+                            <p>By <a href="http://christopherdavis.me/">Christopher Davis</a></p>
+
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div>
+
+            
+        </footer>
 @stop
 
 @section('content')
@@ -46,6 +64,5 @@
         @include('partials.smallFooter')
     </div><!-- main-content/col -->
 </div>
+
 @stop
-
-
