@@ -13,9 +13,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
-    <style type="text/css">
     @yield('styles')
-    </style>
 
     <!-- Scripts -->
     <script>

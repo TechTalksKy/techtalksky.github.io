@@ -67,6 +67,7 @@
 @stop
 
 @section('styles')
+<style type="text/css">
 body {
   background: #F1F3FA;
 }
@@ -174,4 +175,5 @@ body {
   background: #fff;
   min-height: 460px;
 }
+</style>
 @stop
