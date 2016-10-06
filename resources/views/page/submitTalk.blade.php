@@ -123,14 +123,13 @@
 
                 <div class="form-group">
                     <label for="availability">Availability</label>
-                    <input
-                        type="text"
-                        name="availability"
-                        placeholder="What month would you like to present?"
-                        class="form-control"
-                        value="{{ old('availability') }}"
-                        required
-                    >
+                    
+                    <select name="availability" class="form-control">
+                        @for ($i = 0; $i < 12; $i++)
+                            @include('partials.louisvilleOptions', ['i' => $i])
+                            @include('partials.lexingtonOptions', ['i' => $i])
+                        @endfor
+                    </select>
                 </div>
 
                 <div class="form-group">
