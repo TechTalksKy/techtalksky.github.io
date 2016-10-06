@@ -11,19 +11,12 @@ class TalkController extends Controller
 {
     public function index()
     {
-        if (! Auth::check()) {
-            return redirect('/');
-        }
-
         $submissions = Submission::paginate(30);
         return view('page.submissions', compact('submissions'));
     }
 
     public function show(Submission $submission)
     {
-        if (! Auth::check()) {
-            return redirect('/');
-        }
         return view('page.submission', compact('submission'));
     }
 
