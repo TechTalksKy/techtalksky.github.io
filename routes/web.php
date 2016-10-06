@@ -15,3 +15,7 @@ Route::get('talk/{name}', 'PagesController@talk');
 
 Route::get('submit-a-talk', 'TalkController@show');
 Route::post('submit-a-talk', 'TalkController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
