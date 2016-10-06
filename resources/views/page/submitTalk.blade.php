@@ -80,10 +80,10 @@
                 <div class="form-group">
                     <label for="body">A bit about you</label>
                     <textarea 
+                        id="bio"
                         class="form-control"
                         name="bio"
                         placeholder="Tell us about you, where you work, what you're interested in"
-                        required
                     >{{ old('bio') }}</textarea>
                 </div>
 
@@ -114,10 +114,10 @@
                 <div class="form-group">
                     <label for="body">In-Depth Info about Talk</label>
                     <textarea
+                        id="post-body"
                         class="form-control"
                         name="body"
                         placeholder="The more in-depth run down of your talk"
-                        required
                     >{{ old('body') }}</textarea>
                 </div>
 
@@ -182,4 +182,16 @@
     </div>
 
 
+@stop
+
+@section('styles')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+@stop
+
+@section('scripts')
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script>
+        var simplemde = new SimpleMDE({ element: document.getElementById("post-body") });
+        var simplemde = new SimpleMDE({ element: document.getElementById("bio") });
+    </script>
 @stop

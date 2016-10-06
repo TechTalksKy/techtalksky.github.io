@@ -42,9 +42,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank">
-                                    {{ $submission->bio }}
-                                </a>
+                                <div style="padding: 10px">
+                                {!! Markdown::convertToHtml($submission->bio) !!}
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -59,7 +59,7 @@
                     </div>
                     <h4>Body:</h4>
                     <div>
-                        {{ $submission->body }}
+                        {!! Markdown::convertToHtml($submission->body) !!}
                     </div>
                 </div>
             </div>
