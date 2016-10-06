@@ -51,7 +51,7 @@
 
         <p class="subtitle">October 12, 2016 @ 6pm @ <a href="http://www.plantory.org/">Plantory</a></p>
 
-        <p><a href="https://www.facebook.com/events/605156676321055/" target="_blank">Event Info</a></p>
+        <p><a href="https://www.facebook.com/events/605156676321055/" target="_blank">Facebook Event</a> - <a href="http://www.meetup.com/Tech-Talks-KY/events/234621599/">Meetup Event</a></p>
         <p>
             Explore the benefits of describing your infrastructure as code. We'll build a small application using <a href=
             "https://www.terraform.io/">Terraform</a> and AWS's <a href="https://aws.amazon.com/ecs/">container service</a>.

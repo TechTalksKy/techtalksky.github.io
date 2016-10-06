@@ -51,7 +51,7 @@
 
             <p class="subtitle">October 11, 2016 @ 6pm @ <a href="http://osheaslouisville.net/">O'Shea's Highlands</a></p>
 
-            <p><a href="https://www.facebook.com/events/1455873317761591/" target="_blank">Event Info</a></p>
+            <p><a href="https://www.facebook.com/events/1455873317761591/" target="_blank">Facebook Event</a> - <a href="http://www.meetup.com/Tech-Talks-KY/events/234621660/">Meetup Event</a></p>
             <p>
                 Struggling with managing state in a consistent way in your javascript applications? Want to learn more about modern front-end
                 architectures? In this talk we will explore using redux with angular, react, and plain javascript.
