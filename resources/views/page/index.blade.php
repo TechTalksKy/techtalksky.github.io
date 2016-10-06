@@ -15,7 +15,12 @@
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
-                        <a href="{{ URL::to('about') }}">Tues October 11, 2016 @ 6pm</a> - Louisville
+                        <span class="city louisville">
+                            <i class="fa fa-map-marker"></i> Louisville</span> 
+                            <i class="fa fa-calendar"></i> 
+                            <a href="{{ URL::to('about') }}">
+                                Tues October 11, 2016 @ 6pm
+                            </a>
                     </p>
                     <h2><a href="{{ URL::to('event/2016-10-11-managing-frontend-state-with-redux') }}">Managing Frontend State with Redux</a></h2>
 
@@ -28,12 +33,19 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="https://avatars2.githubusercontent.com/u/6674648?v=3&s=466" class="user-icon" alt="user-image">
+                </div>
+            </article>
 
             <article class="post"><div class="post-preview col-xs-10  no-gutter">
                     <p class="meta">
-                        <a href="{{ URL::to('about') }}">Wed October 12, 2016 @ 6pm</a> - Lexington
+                        <span class="city lexington">
+                            <i class="fa fa-map-marker"></i> Lexington
+                        </span>
+                        <i class="fa fa-calendar"></i> 
+                        <a href="{{ URL::to('about') }}">
+                            Wed October 12, 2016 @ 6pm
+                        </a>
                     </p>
                     <h2><a href="{{ URL::to('event/2016-10-12-terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
                     
@@ -46,8 +58,9 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image">
+                </div>
+            </article>
 
             <article class="post">
                 <div class="post-preview col-xs-10  no-gutter">
@@ -67,8 +80,10 @@
                 </div>
 
                 <div class=" col-xs-2  no-gutter">
-                    <img src="http://www.redbullflugtag.com/usa-louisville/wp-content/uploads/sites/17/2016/06/David-H-532x398.jpeg" class="user-icon" alt="user-image"></div>
-            </article></div><!-- Home page posts -->
+                    <img src="http://www.redbullflugtag.com/usa-louisville/wp-content/uploads/sites/17/2016/06/David-H-532x398.jpeg" class="user-icon" alt="user-image">
+                </div>
+            </article>
+        </div><!-- Home page posts -->
 
         <div class="home-page-categories hide animated fadeIn ">
             <div class="category row">
