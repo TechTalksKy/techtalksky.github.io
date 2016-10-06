@@ -13,8 +13,13 @@ Route::get('first-meetup', 'PagesController@meetup');
 Route::get('event/{name}', 'PagesController@event');
 Route::get('talk/{name}', 'PagesController@talk');
 
-Route::get('submit-a-talk', 'TalkController@show');
+Route::get('submit-a-talk', 'TalkController@create');
 Route::post('submit-a-talk', 'TalkController@store');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('submissions', 'TalkController@index');
+    Route::get('submissions/{submission}', 'TalkController@show');
+});
 
 Auth::routes();
 
