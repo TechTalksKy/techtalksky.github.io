@@ -185,6 +185,11 @@
 
 @section('styles')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <style type="text/css">
+        .CodeMirror {
+            font-size: 15px;
+        }
+    </style>
 @stop
 
 @section('scripts')
