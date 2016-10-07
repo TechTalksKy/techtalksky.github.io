@@ -3,8 +3,6 @@
 This is the repo for the site at techtalks.ky
 
 # ToDo
-* build out admin panel
-* once admin panel is built, add ui for Submissions.
 * sponsorship page.
 * job board
     * this is a potential way to help offset costs
