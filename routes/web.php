@@ -16,6 +16,9 @@ Route::get('talk/{name}', 'PagesController@talk');
 Route::get('submit-a-talk', 'TalkController@create');
 Route::post('submit-a-talk', 'TalkController@store');
 
+Route::get('sponsor-a-talk', 'SponsorController@create');
+Route::get('sponsor-a-talk', 'SponsorController@store');
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('submissions', 'TalkController@index');
     Route::get('submissions/{submission}', 'TalkController@show');
