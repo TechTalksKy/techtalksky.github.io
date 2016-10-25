@@ -126,8 +126,8 @@
                     
                     <select name="availability" class="form-control">
                         @for ($i = 0; $i < 12; $i++)
-                            @include('partials.louisvilleOptions', ['i' => $i])
-                            @include('partials.lexingtonOptions', ['i' => $i])
+                            {!! meetupDate('louisville', 2, $i) !!}
+                            {!! meetupDate('lexington', 3, $i) !!}
                         @endfor
                     </select>
                 </div>
