@@ -19,7 +19,9 @@
         </p>
     </div>
 
-    <div class=" col-xs-2  no-gutter">
-        <img src="{{ $post->speaker->avatar }}" class="user-icon" alt="user-image">
-    </div>
+    @if ($post->speaker->avatar)
+        <div class=" col-xs-2  no-gutter">
+            <img src="{{ $post->speaker->avatar }}" class="user-icon" alt="user-image">
+        </div>
+    @endif
 </article>
