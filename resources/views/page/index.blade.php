@@ -16,6 +16,8 @@
             @foreach ($posts as $post)
                 @include("partials.post-{$post->type}")
             @endforeach
+
+            {!! $posts->links() !!}
             
         </div><!-- Home page posts -->
 

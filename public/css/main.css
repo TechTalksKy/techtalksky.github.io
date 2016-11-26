@@ -1985,3 +1985,17 @@ a:hover, a:active, a:focus {
   color: #333;
   border-bottom: solid 1px #999;
 }
+
+.pagination li a {
+    color: #333;
+}
+.pagination .active span {
+    background: #ededed;
+    border-color: #ededed;
+    color: #333;
+}
+.pagination .active span:hover {
+    background: #eee;
+    border-color: #eee;
+    color: #333;
+}
