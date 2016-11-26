@@ -13,76 +13,10 @@
 
         <div class="home-page-posts animated fadeIn ">
 
-            <article class="post"><div class="post-preview col-xs-10  no-gutter">
-                    <p class="meta">
-                        <span class="city louisville">
-                            <i class="fa fa-map-marker"></i> Louisville</span> 
-                            <i class="fa fa-calendar"></i> 
-                            <a href="{{ URL::to('about') }}">
-                                Tues October 11, 2016 @ 6pm
-                            </a>
-                    </p>
-                    <h2><a href="{{ URL::to('event/2016-10-11-managing-frontend-state-with-redux') }}">Managing Frontend State with Redux</a></h2>
-
-                    <p>
-                        Colan Connon will be talking about Redux, a state container for Javascript apps.
-                    </p>
-                    <p class="meta">
-                        <a href="{{ URL::to('about') }}">Tech Talks Ky</a>
-                    </p>
-                </div>
-
-                <div class=" col-xs-2  no-gutter">
-                    <img src="https://avatars2.githubusercontent.com/u/6674648?v=3&s=466" class="user-icon" alt="user-image">
-                </div>
-            </article>
-
-            <article class="post"><div class="post-preview col-xs-10  no-gutter">
-                    <p class="meta">
-                        <span class="city lexington">
-                            <i class="fa fa-map-marker"></i> Lexington
-                        </span>
-                        <i class="fa fa-calendar"></i> 
-                        <a href="{{ URL::to('about') }}">
-                            Wed October 12, 2016 @ 6pm
-                        </a>
-                    </p>
-                    <h2><a href="{{ URL::to('event/2016-10-12-terraform-and-aws') }}">Deploying Applications with Terraform & AWS Container Service</a></h2>
-                    
-                    <p>
-                        Christopher Davis will be talking about Terraform and AWS, describing your infrastructure as code.
-                    </p>
-                    <p class="meta">
-                        <a href="{{ URL::to('about') }}">Tech Talks Ky</a>
-                    </p>
-                </div>
-
-                <div class=" col-xs-2  no-gutter">
-                    <img src="http://christopherdavis.me/images/christopher-davis.png" class="user-icon" alt="user-image">
-                </div>
-            </article>
-
-            <article class="post">
-                <div class="post-preview col-xs-10  no-gutter">
-                    <h2><a href="/talk/dave-hempy"><i class="fa fa-video-camera"></i> Dave Hempy talk on MVC now online</a></h2>
-                    <p>Dave's talk from September can now be watched here: <a href="/talk/dave-hempy">MVC Architecture</a></p>
-                </div>
-            </article>
-
-            <article class="post"><div class="post-preview col-xs-10  no-gutter">
-                    <h2><a href="{{ URL::to('first-meetup') }}">First Meetup!! Wednesday September 14, 2016 @ 6pm</a></h2>
-
-                    <p>Come listen to Dave Hempy talk about <a href="http://rubyonrails.org/">Ruby on Rails</a>. Expect a good introduction to the MVC architecture and the Ruby programming language. </p>
-
-                    <p class="meta">
-                        <a href="{{ URL::to('about') }}">Tech Talks Ky</a>
-                    </p>
-                </div>
-
-                <div class=" col-xs-2  no-gutter">
-                    <img src="http://www.redbullflugtag.com/usa-louisville/wp-content/uploads/sites/17/2016/06/David-H-532x398.jpeg" class="user-icon" alt="user-image">
-                </div>
-            </article>
+            @foreach ($posts as $post)
+                @include("partials.post-{$post->type}", ['post'=> $post]);
+            @endforeach
+            
         </div><!-- Home page posts -->
 
         <div class="home-page-categories hide animated fadeIn ">

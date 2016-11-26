@@ -10,7 +10,8 @@ class PagesController extends Controller
 {
     public function home()
     {
-        return view('page.index');
+        $posts = json_decode(file_get_contents(base_path() . '/posts.json'));
+        return view('page.index', compact('posts'));
     }
 
     public function about()

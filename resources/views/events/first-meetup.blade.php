@@ -5,7 +5,11 @@
 @section('body_classes')
 
 @section('header')
-    <header class="hero-image" role="banner" style="background-image: url(img/postCover.png);">
+    <header class="hero-image" role="banner" style="background: url('http://pre02.deviantart.net/41ba/th/pre/i/2012/241/0/4/fallout_terminal_texture_by_team_machine-d5cubxx.jpg'); background-repeat: none; background-size: cover">
+
+        <div class="title">Dave Hempy</div>
+        <div class="subtitle">MVC Architecture</div>
+        <div class="date">Sept 14, 2016 @ 6pm @ Plantory </div>
 
         <span class="menu-trigger animated fadeInDown">
             <span class="bar"></span>
@@ -16,6 +20,7 @@
 
         @include('partials.nav')
     </header>
+        
 @stop
 
 @section('content')
