@@ -61,11 +61,22 @@ class PagesController extends Controller
 
     public function event($name)
     {
-        return view('events.' . $name);
+        $post = $this->getPostData($name);
+        return view('events.show', compact('post'));
     }
 
     public function talk($name)
     {
-        return view('talk.' . $name);
+        $post = $this->getPostData($name);
+        // dd($post);
+        return view('talk.show', compact('post'));
+        return view('talk.' . $name, compact('post'));
+    }
+
+    public function getPostData($slug)
+    {
+        $posts = collect(json_decode(file_get_contents(base_path() . '/posts.json')));
+        $post = $posts->where('slug', $slug);
+        return $post->first();
     }
 }
