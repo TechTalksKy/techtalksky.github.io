@@ -15,17 +15,17 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('slug');
-            $table->string('type');
-            $table->string('description');
-            $table->text('content');
-            $table->string('video_url');
-            $table->integer('speaker_id');
-            $table->dateTime('meetup_date');
-            $table->string('city');
-            $table->string('facebook_link');
-            $table->string('meetup_link');
+            $table->string('title')->nullable();
+            $table->string('slug')->nullable();
+            $table->string('type')->nullable();
+            $table->string('description')->nullable();
+            $table->text('content')->nullable();
+            $table->string('video_url')->nullable();
+            $table->integer('speaker_id')->nullable();
+            $table->dateTime('meetup_date')->nullable();
+            $table->string('city')->nullable();
+            $table->string('facebook_link')->nullable();
+            $table->string('meetup_link')->nullable();
             $table->timestamps();
         });
     }

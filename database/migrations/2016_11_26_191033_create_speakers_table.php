@@ -15,12 +15,14 @@ class CreateSpeakersTable extends Migration
     {
         Schema::create('speakers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('avatar');
-            $table->string('website');
-            $table->string('twitter');
-            $table->string('facebook');
-            $table->string('linkedin');
+            $table->string('name')->nullable();
+            $table->string('email')->nullable();
+            $table->text('bio')->nullable();
+            $table->string('avatar')->nullable();
+            $table->string('website')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('linkedin')->nullable();
             $table->timestamps();
         });
     }

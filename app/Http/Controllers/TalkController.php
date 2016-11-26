@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Auth;
+use App\Post;
+use App\Speaker;
 use App\Submission;
 use App\Http\Requests;
 use Illuminate\Http\Request;
@@ -38,6 +40,34 @@ class TalkController extends Controller
             'city' => 'required'
         ]);
         Submission::create($request->all());
+        return redirect('/');
+    }
+
+    public function publish(Submission $submission)
+    {
+        $speaker = Speaker::firstOrCreate([
+            'email' => $submission->email
+        ]);
+        $speaker->fill([
+            'name' => $submission->author_name,
+            'bio' => $submission->bio,
+            'avatar' => $submission->avatar
+        ])->save();
+        
+        $date = \Carbon\Carbon::parse($submission->availability . config('meetup.start_time'));
+        
+        $post = Post::firstOrCreate([
+            'slug' => str_slug($date->format('Y-m-d').'-'.$submission->title)
+        ])->fill([
+            'speaker_id' => $speaker->id,
+            'meetup_date' => $date->format('Y-m-d H:i:s'),
+            'title' => $submission->title,
+            'city' => $submission->city,
+            'description' => $submission->description,
+            'content' => $submission->body,
+            'type' => 'meetup',
+        ])->save();
+
         return redirect('/');
     }
 }

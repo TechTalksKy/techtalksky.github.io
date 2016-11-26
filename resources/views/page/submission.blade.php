@@ -6,6 +6,11 @@
             <div class="col-md-offset-3 col-md-8">
                 <h2>{{ $submission->title }}</h2>
             </div>
+            <div class="col-md-1">
+                <a href="/submissions/{{ $submission->id }}/publish" class="btn btn-primary">
+                    Publish
+                </a>
+            </div>
         </div>
         <div class="row profile">
             <div class="col-md-3">

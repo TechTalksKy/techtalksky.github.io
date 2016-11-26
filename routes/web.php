@@ -18,6 +18,7 @@ Route::post('submit-a-talk', 'TalkController@store');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('submissions', 'TalkController@index');
+    Route::get('submissions/{submission}/publish', 'TalkController@publish');
     Route::get('submissions/{submission}', 'TalkController@show');
 });
 
