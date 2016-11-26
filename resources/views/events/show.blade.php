@@ -58,7 +58,7 @@
         <p class="subtitle">{{ $post->meetup_date }} @ @include('venues.' .$post->city)</p>
 
         <p>
-            @include('partials.links', compact('post'))
+            @include('partials.links')
         </p>
 
         {!! Markdown::convertToHtml($post->content) !!}
