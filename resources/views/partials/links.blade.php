@@ -9,5 +9,5 @@
 @endif
 
 @if ($post->meetup_link)
-    <a href="{{ $post->meetup_link }}">Meetup Event</a>
+    <a href="{{ $post->meetup_link }}" target="_blank">Meetup Event</a>
 @endif
