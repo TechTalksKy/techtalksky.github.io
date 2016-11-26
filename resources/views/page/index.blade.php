@@ -14,7 +14,7 @@
         <div class="home-page-posts animated fadeIn ">
 
             @foreach ($posts as $post)
-                @include("partials.post-{$post->type}", ['post'=> $post]);
+                @include("partials.post-{$post->type}", ['post'=> $post])
             @endforeach
             
         </div><!-- Home page posts -->
