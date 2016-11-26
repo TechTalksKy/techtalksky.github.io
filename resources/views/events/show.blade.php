@@ -29,7 +29,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-offset-1 col-xs-12 col-sm-2">
-                    <img src="{{ $post->speaker->avatar }}" class="user-icon " alt="user-image">
+                    @if ($post->speaker->avatar)
+                        <img src="{{ $post->speaker->avatar }}" class="user-icon " alt="user-image">
+                    @endif
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <div class="category-list">
