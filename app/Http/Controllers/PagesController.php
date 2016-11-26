@@ -68,9 +68,7 @@ class PagesController extends Controller
     public function talk($name)
     {
         $post = $this->getPostData($name);
-        // dd($post);
         return view('talk.show', compact('post'));
-        return view('talk.' . $name, compact('post'));
     }
 
     public function getPostData($slug)
