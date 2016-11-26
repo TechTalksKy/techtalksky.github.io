@@ -13,7 +13,7 @@
         </span>
         @include('partials.nav')
         <div id="video">
-            <iframe width="560" height="315" src="{{ $post->video }}" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{ $post->video_url }}" frameborder="0" allowfullscreen></iframe>
         </div>
     </header>
     <footer class="single">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <div class="category-list">
-                        <p>Presentation <span>{{ $post->talk->date }}</span></p>
+                        <p>Presentation <span>{{ $post->meetup_date }}</span></p>
                         <p>By {{ $post->speaker->name }}</p>
 
                     </div>
@@ -43,9 +43,9 @@
     <div class="col-xs-12 single-content">
         
 
-        <h1>{{ $post->speaker->name }} | {{ $post->talk->title }}</h1>
+        <h1>{{ $post->speaker->name }} | {{ $post->title }}</h1>
 
-        <p class="subtitle">{{ $post->talk->date }} @ @include('venues.' . $post->talk->city)</p>
+        <p class="subtitle">{{ $post->meetup_date }} @ @include('venues.' . $post->city)</p>
 
         <p>
             Finally got the video uploaded to Youtube for your viewing pleasure. 

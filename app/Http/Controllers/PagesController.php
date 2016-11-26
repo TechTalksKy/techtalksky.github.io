@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+use App\Post;
 use App\Http\Requests;
+use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        $posts = json_decode(file_get_contents(base_path() . '/posts.json'));
+
+        $posts = Post::orderBy('created_at', 'DESC')->paginate(10);
+        // json_decode(file_get_contents(base_path() . '/posts.json'));
         return view('page.index', compact('posts'));
     }
 
@@ -61,20 +63,13 @@ class PagesController extends Controller
 
     public function event($name)
     {
-        $post = $this->getPostData($name);
+        $post = Post::where('slug', $name)->first();
         return view('events.show', compact('post'));
     }
 
     public function talk($name)
     {
-        $post = $this->getPostData($name);
+        $post = Post::where('slug', $name)->first();
         return view('talk.show', compact('post'));
-    }
-
-    public function getPostData($slug)
-    {
-        $posts = collect(json_decode(file_get_contents(base_path() . '/posts.json')));
-        $post = $posts->where('slug', $slug);
-        return $post->first();
     }
 }

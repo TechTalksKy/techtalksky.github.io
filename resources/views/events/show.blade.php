@@ -1,6 +1,6 @@
 @extends('layouts.blog')
 
-@section('title', $post->speaker->name . ' - ' . $post->talk->title . ' | Tech Talks Ky')
+@section('title', $post->speaker->name . ' - ' . $post->title . ' | Tech Talks Ky')
 
 @section('body_classes')
 
@@ -11,10 +11,10 @@
         <div class="title">{{ $post->speaker->name }}</div>
         <div class="subtitle">
             <div class="container">
-                {{ $post->talk->title }}
+                {{ $post->title }}
             </div>
         </div>
-        <div class="date">{{ $post->talk->date }} </div>
+        <div class="date">{{ $post->meetup_date }} </div>
 
         <span class="menu-trigger animated fadeInDown">
             <span class="bar"></span>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <div class="category-list">
-                        <p>Presentation <span>{{ $post->talk->date }}</span></p>
+                        <p>Presentation <span>{{ $post->meetup_date }}</span></p>
                         <p>
                             By @include('partials.speaker', compact('post'))
                         </p>
@@ -51,15 +51,15 @@
     <div class="col-xs-12 single-content">
         
 
-        <h1>{{ $post->speaker->name }} | {{ $post->talk->title }}</h1>
+        <h1>{{ $post->speaker->name }} | {{ $post->title }}</h1>
 
-        <p class="subtitle">{{ $post->talk->date }} @ @include('venues.' .$post->talk->city)</p>
+        <p class="subtitle">{{ $post->meetup_date }} @ @include('venues.' .$post->city)</p>
 
         <p>
             @include('partials.links', compact('post'))
         </p>
-        
-        {!! $post->talk->content !!}
+
+        {!! Markdown::convertToHtml($post->content) !!}
         
         @include('partials.smallFooter')
     </div><!-- main-content/col -->
