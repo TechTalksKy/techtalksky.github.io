@@ -10,9 +10,7 @@ class PagesController extends Controller
 {
     public function home()
     {
-
         $posts = Post::orderBy('created_at', 'DESC')->paginate(10);
-        // json_decode(file_get_contents(base_path() . '/posts.json'));
         return view('page.index', compact('posts'));
     }
 
