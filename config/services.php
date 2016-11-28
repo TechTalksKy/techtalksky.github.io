@@ -34,5 +34,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'meetup' => [
+        'client_id' => env('MEETUP_KEY'),
+        'client_secret' => env('MEETUP_SECRET'),
+        'redirect' => env('MEETUP_REDIRECT_URI'),
+    ],
 
 ];

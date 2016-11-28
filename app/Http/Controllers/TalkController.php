@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use App\Post;
+use App\Meetup;
 use App\Speaker;
 use App\Submission;
 use App\Http\Requests;
@@ -53,8 +54,10 @@ class TalkController extends Controller
             'bio' => $submission->bio,
             'avatar' => $submission->avatar
         ])->save();
-        
+
         $date = \Carbon\Carbon::parse($submission->availability . config('meetup.start_time'));
+
+        $meetup = Meetup::createEvent($submission, $date);
         
         $post = Post::firstOrCreate([
             'slug' => str_slug($date->format('Y-m-d').'-'.$submission->title)
@@ -66,7 +69,10 @@ class TalkController extends Controller
             'description' => $submission->description,
             'content' => $submission->body,
             'type' => 'meetup',
+            'meetup_link' => $meetup->event_url,
         ])->save();
+
+
 
         return redirect('/');
     }
