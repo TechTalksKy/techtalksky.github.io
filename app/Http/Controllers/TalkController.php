@@ -58,7 +58,7 @@ class TalkController extends Controller
         $date = \Carbon\Carbon::parse($submission->availability . config('meetup.start_time'));
 
         $meetup = Meetup::createEvent($submission, $date);
-        
+
         $post = Post::firstOrCreate([
             'slug' => str_slug($date->format('Y-m-d').'-'.$submission->title)
         ])->fill([
@@ -71,8 +71,6 @@ class TalkController extends Controller
             'type' => 'meetup',
             'meetup_link' => $meetup->event_url,
         ])->save();
-
-
 
         return redirect('/');
     }
