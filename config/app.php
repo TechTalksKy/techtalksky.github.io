@@ -169,6 +169,9 @@ return [
          */
         Laravel\Socialite\SocialiteServiceProvider::class,
         SocialiteProviders\Manager\ServiceProvider::class,
+        NotificationChannels\Twitter\TwitterServiceProvider::class,
+        NotificationChannels\FacebookPoster\FacebookPosterServiceProvider::class,
+
         //
 
         /*
