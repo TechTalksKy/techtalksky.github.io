@@ -45,7 +45,7 @@
 
         <h1>{{ $post->speaker->name }} | {{ $post->title }}</h1>
 
-        <p class="subtitle">{{ $post->meetup_date }} @ @include('venues.' . $post->city)</p>
+        <p class="subtitle">{{ $post->meetup_date }} @ @include('venues.' . strtolower($post->city))</p>
 
         <p>
             Finally got the video uploaded to Youtube for your viewing pleasure. 
