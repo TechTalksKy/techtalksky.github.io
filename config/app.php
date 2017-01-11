@@ -167,7 +167,11 @@ return [
         /*
          * Package Service Providers...
          */
-        
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
+        NotificationChannels\Twitter\TwitterServiceProvider::class,
+        NotificationChannels\FacebookPoster\FacebookPosterServiceProvider::class,
+
         //
 
         /*
@@ -226,7 +230,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];
