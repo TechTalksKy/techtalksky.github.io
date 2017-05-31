@@ -2,16 +2,20 @@
 
 /**
  * List date for meetups
- * @param  [type] $city      [description]
- * @param  [type] $dayOfWeek [description]
- * @param  [type] $month     [description]
- * @param  [type] $week      Zero based...0 = first occurence, 1 = second
- * @return [type]            [description]
+ * @param $city
+ * @param $dayOfWeek
+ * @param $month
+ * @param $week
+ * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|void [type]            [description]
+ * @internal param $ [type] $city      [description]
+ * @internal param $ [type] $dayOfWeek [description]
+ * @internal param $ [type] $month     [description]
+ * @internal param $ [type] $week      Zero based...0 = first occurence, 1 = second
  */
 function meetupDate($city, $dayOfWeek, $month, $week)
 {
     $date = \Carbon\Carbon::now()
-        ->addMonths($month)
+        ->month($month)
         ->firstOfMonth($dayOfWeek)
         ->addWeek($week);
 
