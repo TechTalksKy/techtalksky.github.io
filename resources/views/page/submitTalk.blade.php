@@ -126,7 +126,7 @@
                     
                     <select name="availability" class="form-control">
                         @for ($i = 0; $i < 12; $i++)
-                            {!! meetupDate('louisville', 4, $i, 2) !!}
+                            {!! meetupDate('louisville', 4, $i, 1) !!}
                             {!! meetupDate('lexington', 4, $i, 2) !!}
                         @endfor
                     </select>

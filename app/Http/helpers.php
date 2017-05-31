@@ -15,7 +15,6 @@
 function meetupDate($city, $dayOfWeek, $month, $week)
 {
     $date = \Carbon\Carbon::now()
-        ->month($month)
         ->firstOfMonth($dayOfWeek)
         ->addWeek($week);
 
