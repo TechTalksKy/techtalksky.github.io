@@ -15,12 +15,12 @@
 function meetupDate($city, $dayOfWeek, $month, $week)
 {
     $date = \Carbon\Carbon::now()
-        ->firstOfMonth($dayOfWeek)
-        ->addWeek($week);
+        ->addWeek(1)
+        ->addDay(1);
 
-    if (\Carbon\Carbon::now()->gt($date)) {
-        return;
-    }
+//    if (\Carbon\Carbon::now()->gt($date)) {
+//        return;
+//    }
 
     $date = $date->format('M d, Y');
 
