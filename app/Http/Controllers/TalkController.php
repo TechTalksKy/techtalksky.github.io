@@ -58,7 +58,7 @@ class TalkController extends Controller
 
         $date = \Carbon\Carbon::parse($submission->availability . config('meetup.start_time'));
 
-        $meetup = Meetup::createEvent($submission, $date);
+//        $meetup = Meetup::createEvent($submission, $date);
 
         $post = Post::firstOrCreate([
             'slug' => str_slug($date->format('Y-m-d').'-'.$submission->title)
@@ -71,10 +71,10 @@ class TalkController extends Controller
             'description' => $submission->description,
             'content' => $submission->body,
             'type' => 'meetup',
-            'meetup_link' => $meetup->event_url,
+            'meetup_link' => '',
         ])->save();
 
-        $post->notify(new PostPublished());
+//        $post->notify(new PostPublished());
 
         return redirect('/');
     }
